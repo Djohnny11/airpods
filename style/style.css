@@ -1,0 +1,292 @@
+/* Root start */
+:root {
+    --black:#282828;
+    --white:#FFFFFF;
+    }
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* body {
+    background: #151515;
+} */
+
+/* Root end */
+
+/* header start */
+.header__nav {
+    background: #282828;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header__nav-list {
+    display: flex;
+    height: 80px;
+    column-gap: 30px;
+}
+
+
+.header__nav-link {
+    color: white;
+    font-family: "MB";
+    font-size: 20px;
+    height:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    transition: color 300ms;
+    align-items: center;
+    
+}
+
+.header__nav-link::after {
+    content:'';
+    display: block;
+    background:orange;
+    height: 4px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    transition: width 500ms;
+}
+
+.header__nav-link:hover {
+    color:orange;
+}
+
+.header__nav-link:hover::after {
+    width:100%;
+}
+
+.header__nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.header__nav-icon1, .header__nav-icon2 {
+    color:white;
+    font-size: 20px;
+}
+
+.header__nav-box {
+    display: flex;
+    column-gap:30px ;
+}
+
+.header__content {
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 38px;
+}
+
+.header__content-bg {
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index: -2;
+}
+
+.header__content-title {
+    color: #FFF;
+    font-family: "PR";
+    font-size: 100px;
+    line-height: 75px;
+    margin-top: 204px;
+}
+
+.header__btn {
+    background-color: white;
+    color: black;
+    padding:14px 13px;
+    border-radius: 10px;
+    color: #171718;
+    font-family: "MM";
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* header end */
+
+/* main start */
+
+.main {
+    background-color: #151515;
+}
+
+.main__block1-left {
+    max-width: 538px;
+    width: 100%;
+    color: #FFF;
+    font-family: "MM";
+    font-size: 22px;
+}
+
+.main__block1 {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.main__block1-right {
+    max-width: 552px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.block3-1text,.block3-2text {
+    color: #FFF;
+    font-family: "MB";
+    font-size: 20px;
+    max-width: 333px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.main__block-3 {
+    display: flex;
+    align-items: center;
+    column-gap:15px;
+}
+
+.block3-1text::after {
+    content: '';
+    display: block;
+    background:#C4C4C4;
+    height: 1px;
+    width: 15px;
+    width: 100%;
+    margin:0 14px;
+
+}
+
+.block3-2text::before {
+    content: '';
+    display: block;
+    background:#C4C4C4;
+    height: 1px;
+    width: 15px;
+    width: 100%;
+    margin:0 14px;
+
+}
+
+.block4-box {
+
+    display: flex;
+    column-gap: 30px;
+
+}
+
+.block4-title {
+    color: #000;
+    font-family: "MB";
+    font-size: 20px;
+    padding-top: 15px;
+
+}
+
+.block4-price {
+    color: #000;
+    font-family: "MM";
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+.block4-btn {
+    width: 161px;
+    height: 34px;
+    background: #151515;
+    color: white;
+    font-family: "MB";
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 20px;
+    padding:7px 57px;
+}
+
+.block4-img {
+    padding:10px 0;
+}
+
+.block4-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 255px;
+    height: 312px;
+    background: white;
+    margin-top: 79px;
+    margin-bottom: 55px;
+}
+
+/* main end */
+
+/* footer start */
+.footer {
+    max-width: 1600px;
+    width: 100%;
+    height: 215px;
+    background: #282828;
+    box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.25);
+   
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 215px;
+}
+
+.footer-imgs {
+    display: flex;
+    column-gap: 30px;
+}
+
+
+/* footer end */
+
+
+
+
